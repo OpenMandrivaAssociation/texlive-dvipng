@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26689
 # category TLCore
 # catalog-ctan /dviware/dvipng
-# catalog-date 2011-01-01 13:56:40 +0100
+# catalog-date 2012-04-21 10:57:19 +0200
 # catalog-license lgpl
 # catalog-version 1.14
 Name:		texlive-dvipng
 Version:	1.14
-Release:	2
+Release:	3
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
