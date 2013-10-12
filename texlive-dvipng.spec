@@ -1,4 +1,4 @@
-# revision 26689
+# revision 29821
 # category TLCore
 # catalog-ctan /dviware/dvipng
 # catalog-date 2012-04-21 10:57:19 +0200
@@ -6,7 +6,7 @@
 # catalog-version 1.14
 Name:		texlive-dvipng
 Version:	1.14
-Release:	3
+Release:	4
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
@@ -36,13 +36,13 @@ inclusion of PostScript, PNG, JPEG or GIF images.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdir}/doc/dvipng/dvipng.html
-%doc %{_texmfdir}/doc/dvipng/dvipng.pdf
+%doc %{_texmfdistdir}/doc/dvipng/dvipng.html
+%doc %{_texmfdistdir}/doc/dvipng/dvipng.pdf
 %doc %{_infodir}/dvipng.info*
 %doc %{_mandir}/man1/dvigif.1*
-%doc %{_texmfdir}/doc/man/man1/dvigif.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvigif.man1.pdf
 %doc %{_mandir}/man1/dvipng.1*
-%doc %{_texmfdir}/doc/man/man1/dvipng.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvipng.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,26 +52,8 @@ inclusion of PostScript, PNG, JPEG or GIF images.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_infodir}
-mv %{buildroot}%{_texmfdir}/doc/info/*.info %{buildroot}%{_infodir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.14-3
-+ Revision: 812239
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.14-2
-+ Revision: 751239
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.14-1
-+ Revision: 718284
-- texlive-dvipng
-- texlive-dvipng
-- texlive-dvipng
-- texlive-dvipng
-
+mv %{buildroot}%{_texmfdistdir}/doc/info/*.info %{buildroot}%{_infodir}
