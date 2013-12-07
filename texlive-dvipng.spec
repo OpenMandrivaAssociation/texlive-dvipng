@@ -6,7 +6,7 @@
 # catalog-version 1.14
 Name:		texlive-dvipng
 Version:	1.14
-Release:	5
+Release:	6
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
