@@ -1,12 +1,12 @@
-# revision 29821
+# revision 34145
 # category TLCore
 # catalog-ctan /dviware/dvipng
-# catalog-date 2012-04-21 10:57:19 +0200
+# catalog-date 2013-12-16 20:22:01 +0100
 # catalog-license lgpl
 # catalog-version 1.14
 Name:		texlive-dvipng
 Version:	1.14
-Release:	9
+Release:	10
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
@@ -20,17 +20,17 @@ Requires:	texlive-dvipng.bin
 
 %description
 This program makes PNG and/or GIF graphics from DVI files as
-obtained from TeX and its relatives. Its benefits include: -
+obtained from TeX and its relatives. Its benefits include:
 Speed. It offers very fast rendering of DVI as bitmap files,
 which makes it suitable for generating large amounts of images
-on-the-fly, as needed in preview-latex, WeBWorK and others; -
-It does not read the postamble, so it can be started before TeX
+on-the-fly, as needed in preview-latex, WeBWorK and others; It
+does not read the postamble, so it can be started before TeX
 finishes. There is a --follow switch that makes dvipng wait at
 end-of-file for further output, unless it finds the POST marker
-that indicates the end of the DVI; - Interactive query of
+that indicates the end of the DVI; Interactive query of
 options. dvipng can read options interactively through stdin,
 and all options are usable. It is even possible to change the
-input file through this interface. - Support for PK, VF,
+input file through this interface. Support for PK, VF,
 PostScript Type1, and TrueType fonts, colour specials, and
 inclusion of PostScript, PNG, JPEG or GIF images.
 
