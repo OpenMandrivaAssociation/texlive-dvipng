@@ -1,18 +1,12 @@
-# revision 34145
-# category TLCore
-# catalog-ctan /dviware/dvipng
-# catalog-date 2013-12-16 20:22:01 +0100
-# catalog-license lgpl
-# catalog-version 1.14
 Name:		texlive-dvipng
-Version:	1.15
-Release:	2
+Version:	62517
+Release:	1
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
 License:	LGPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -46,7 +40,7 @@ inclusion of PostScript, PNG, JPEG or GIF images.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
