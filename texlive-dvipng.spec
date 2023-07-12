@@ -1,6 +1,6 @@
 Name:		texlive-dvipng
-Version:	62517
-Release:	2
+Version:	66203
+Release:	1
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipng
