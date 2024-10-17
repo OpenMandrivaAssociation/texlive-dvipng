@@ -3,7 +3,7 @@ Version:	70015
 Release:	1
 Summary:	A fast DVI to PNG/GIF converter
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dvipng
+URL:		https://www.ctan.org/tex-archive/dviware/dvipng
 License:	LGPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipng.doc.r%{version}.tar.xz
